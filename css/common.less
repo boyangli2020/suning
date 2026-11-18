@@ -1,0 +1,93 @@
+a {
+    text-decoration: none;
+}
+
+
+// 设置常见的屏幕尺寸，修改里面的html文字大小
+
+// 如果屏幕宽度 小于 320px（比如某些极老的设备或特殊窗口），那么所有 min-width 都不满足，
+// 这时才会用最上面的 html { font-size: 50px; } 作为兜底。
+html {
+    font-size: 50px;
+}
+
+// 此次开发，定义划分屏幕的总份数为15等份，份数可以设置为一个变量
+@no: 15;
+
+
+// 320px的相关设置
+@media screen and (min-width: 320px) {
+    html {
+        font-size: (320px / @no);
+    }
+}
+
+// 360px的相关设置
+@media screen and (min-width: 360px) {
+    html {
+        font-size: (360px / @no);
+    }
+}
+
+// 375px的相关设置，iphone6/7/8
+@media screen and (min-width: 375px) {
+    html {
+        font-size: (375px / @no);
+    }
+}
+
+// 384px的相关设置
+@media screen and (min-width: 384px) {
+    html {
+        font-size: (384px / @no);
+    }
+}
+
+// 400px的相关设置
+@media screen and (min-width: 400px) {
+    html {
+        font-size: (400px / @no);
+    }
+}
+
+// 414px的相关设置
+@media screen and (min-width: 414px) {
+    html {
+        font-size: (414px / @no);
+    }
+}
+
+// 424px的相关设置
+@media screen and (min-width: 424px) {
+    html {
+        font-size: (424px / @no);
+    }
+}
+
+// 480px的相关设置
+@media screen and (min-width: 480px) {
+    html {
+        font-size: (480px / @no);
+    }
+}
+
+// 540px的相关设置
+@media screen and (min-width: 540px) {
+    html {
+        font-size: (540px / @no);
+    }
+}
+
+// 720px的相关设置
+@media screen and (min-width: 720px) {
+    html {
+        font-size: (720px / @no);
+    }
+}
+
+// 750px的相关设置，pc端屏幕远远大于750px，但是移动端页面即使在PC端显示，元素尺寸不要一味的去增大。
+@media screen and (min-width: 750px) {
+    html {
+        font-size: (750px / @no);
+    }
+}
